@@ -7,7 +7,7 @@
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
-      #map {
+      #wurst {
             height: 600px;
             width: 600px;
             background: yellow;
@@ -22,11 +22,11 @@
     </style>
   </head>
   <body>
-    <div id="map"></div>
+    <div id="wurst"></div>
     <script>
       function initMap() {
           console.log(1);
-        var map = new google.maps.Map(document.getElementById('map'), {
+        var map = new google.maps.Map(document.getElementById('wurst'), {
           zoom: 4,
           center: {lat: 49.496675, lng: -102.65625}
         });
@@ -37,8 +37,8 @@
         georssLayer.setMap(map);
                   
                   
-                document.getElementById('map').style.height = "100%";
-                document.getElementById('map').style.width = "100%";
+                document.getElementById('wurst').style.height = "100%";
+                document.getElementById('wurst').style.width = "100%";
       }
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwt53WESA58UYq3Abnq0mdmKib4nds1T8&callback=initMap">
